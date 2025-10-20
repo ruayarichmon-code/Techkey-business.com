@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TECH-KEY TOOL - The Key to a Dust-Free Device</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .hidden-video { display: none; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Navbar -->
+  <header class="bg-blue-900 text-white fixed w-full z-10 shadow-md">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <h1 class="text-2xl font-bold">TECH-KEY TOOL</h1>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="#home" class="hover:text-yellow-300">Home</a></li>
+          <li><a href="#about" class="hover:text-yellow-300">About</a></li>
+          <li><a href="#product" class="hover:text-yellow-300">Product</a></li>
+          <li><a href="#pricing" class="hover:text-yellow-300">Pricing</a></li>
+          <li><a href="#contact" class="hover:text-yellow-300">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Home -->
+  <section id="home" class="bg-gray-100 pt-32 pb-20 text-center">
+    <h2 class="text-5xl font-extrabold mb-4 text-blue-900">The Key to a Dust-Free Device</h2>
+    <p class="text-lg mb-6 max-w-2xl mx-auto">
+      Keep your gadgets clean and protected with TECH-KEY TOOL — the essential cleaning tool for every tech user.
+    </p>
+    <a href="#product" class="bg-yellow-400 text-black px-6 py-3 rounded-lg shadow hover:bg-yellow-300">See Product</a>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-20 bg-white text-center">
+    <div class="container mx-auto">
+      <h3 class="text-3xl font-bold mb-6 text-blue-900">About TECH-KEY TOOL</h3>
+      <p class="max-w-3xl mx-auto text-lg leading-relaxed">
+        TECH-KEY TOOL was created to help gadget users clean their devices safely and easily.
+        It’s a multi-purpose cleaning tool designed for laptops, phones, and keyboards.
+        Our goal is to give customers a reliable and affordable way to keep their gadgets dust-free anytime.
+      </p>
+    </div>
+  </section>
+
+  <!-- Product -->
+  <section id="product" class="py-20 bg-blue-50 text-center">
+    <div class="container mx-auto">
+      <h3 class="text-3xl font-bold mb-10 text-blue-900">Our Product</h3>
+
+      <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl inline-block transition-all duration-300">
+        <!-- Product Image -->
+        <img 
+          src="https://i.ibb.co/NgvMNMgV/techkeytool.png"
+          alt="TECH-KEY TOOL Cleaning Brush"
+          class="w-64 mx-auto mb-6 rounded-xl shadow-md border border-gray-300"
+        >
+
+        <h4 class="font-bold text-2xl mb-2 text-blue-900">TECH-KEY Cleaning Tool</h4>
+        <p class="text-gray-700 mb-4 max-w-md mx-auto">
+          A compact and reusable cleaning tool that helps remove dust and dirt 
+          from your gadgets like laptops, phones, and keyboards. It’s easy to use, 
+          durable, and perfect for keeping your devices spotless.
+        </p>
+        <p class="font-bold text-blue-900 text-lg mb-6">₱250 only</p>
+
+        <!-- 🎥 Video Button -->
+        <button onclick="toggleVideo()" class="bg-blue-900 text-white px-8 py-3 rounded-lg shadow hover:bg-blue-700 transition-all">
+          ▶ Watch Product Video
+        </button>
+
+        <!-- Hidden Video Player -->
+        <div id="videoContainer" class="hidden-video mt-8">
+          <iframe 
+            class="mx-auto rounded-lg shadow-lg w-full md:w-2/3 aspect-video"
+            src="https://www.youtube.com/embed/WvQQuOFky94"
+            title="TECH-KEY TOOL Product Video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function toggleVideo() {
+      const videoContainer = document.getElementById("videoContainer");
+      videoContainer.classList.toggle("hidden-video");
+      if (!videoContainer.classList.contains("hidden-video")) {
+        window.location.href = "#videoContainer";
+      }
+    }
+  </script>
+
+  <!-- Pricing -->
+  <section id="pricing" class="py-20 bg-white text-center">
+    <div class="container mx-auto">
+      <h3 class="text-3xl font-bold mb-8 text-blue-900">Affordable & Reliable</h3>
+      <p class="max-w-2xl mx-auto text-lg">
+        Each TECH-KEY TOOL is made from high-quality materials and designed to last. 
+        Clean your gadgets anytime, anywhere for just <span class="font-bold">₱250</span>.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 bg-blue-50 text-center">
+    <div class="container mx-auto">
+      <h3 class="text-3xl font-bold mb-6 text-blue-900">Contact Us</h3>
+      <p>📍 El Dorado Dulo GK, Parañaque City, Philippines</p>
+      <p>📧 <a href="mailto:technologykey11@gmail.com" class="text-blue-900 font-bold">technologykey11@gmail.com</a></p>
+      <p>📱 0969-327-3895</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-900 text-white text-center py-6">
+    <p>© 2025 TECH-KEY TOOL | The Key to a Dust-Free Device.</p>
+  </footer>
+
+</body>
+</html>
