@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TECH-KEY TOOL - The Key to a Dust-Free Device</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: #1e293b;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: linear-gradient(to right, #0f172a, #1e3a8a);
+      border-bottom: 3px solid #facc15;
+    }
+
+    footer {
+      background: linear-gradient(to right, #1e3a8a, #0f172a);
+      border-top: 3px solid #facc15;
+    }
+
+    /* ✅ Hero Section (parang CraftySticks style) */
+    .hero {
+      background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)),
+        url('https://i.ibb.co/4rX1cTq/tech-key-tool-logo.png');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: white;
+      text-align: center;
+      padding: 180px 20px;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      font-weight: 800;
+      color: #facc15;
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.6);
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-top: 15px;
+      color: #f1f5f9;
+    }
+
+    .hero button {
+      background-color: #facc15;
+      color: #000;
+      padding: 14px 35px;
+      margin-top: 30px;
+      font-weight: 600;
+      border-radius: 8px;
+      box-shadow: 0 0 20px rgba(250, 204, 21, 0.7);
+      transition: 0.3s;
+    }
+
+    .hero button:hover {
+      background-color: #fbbf24;
+      transform: scale(1.05);
+    }
+
+    /* Section backgrounds */
+    .about-bg {
+      background: linear-gradient(rgba(10, 10, 30, 0.8), rgba(10, 10, 30, 0.9)),
+                  url('https://images.unsplash.com/photo-1581090700227-1e37b190418e?auto=format&fit=crop&w=1470&q=80');
+      background-size: cover;
+      background-position: center;
+      color: white;
+    }
+
+    .product-bg {
+      background: linear-gradient(rgba(255,255,255,0.8), rgba(250,250,250,0.9)),
+                  url('https://images.unsplash.com/photo-1616469829581-4e7b72f98c8b?auto=format&fit=crop&w=1470&q=80');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .pricing-bg {
+      background: linear-gradient(rgba(10,10,10,0.85), rgba(20,20,20,0.85)),
+                  url('https://images.unsplash.com/photo-1581092334707-47fbb03b5d5c?auto=format&fit=crop&w=1470&q=80');
+      background-size: cover;
+      background-position: center;
+      color: white;
+    }
+
+    .contact-bg {
+      background: linear-gradient(rgba(30,30,60,0.85), rgba(10,10,20,0.9)),
+                  url('https://images.unsplash.com/photo-1527443154391-507e9dc6c5cc?auto=format&fit=crop&w=1470&q=80');
+      background-size: cover;
+      background-position: center;
+      color: white;
+    }
+
+    .card {
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(30,64,175,0.4);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header class="text-white fixed w-full z-10 shadow-md">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <h1 class="text-2xl font-bold text-yellow-400">TECH-KEY TOOL</h1>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="#home" class="hover:text-yellow-300">Home</a></li>
+          <li><a href="#about" class="hover:text-yellow-300">About</a></li>
+          <li><a href="#product" class="hover:text-yellow-300">Product</a></li>
+          <li><a href="#pricing" class="hover:text-yellow-300">Pricing</a></li>
+          <li><a href="#contact" class="hover:text-yellow-300">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 🟡 Hero (with logo background) -->
+  <section id="home" class="hero">
+    <h2>The Key to a Dust-Free Device</h2>
+    <p>Keep your gadgets clean and protected with TECH-KEY TOOL — the essential cleaning tool for every tech user.</p>
+    <a href="#product"><button>See Product</button></a>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-20 about-bg text-center">
+    <div class="container mx-auto">
+      <h3 class="text-3xl font-bold mb-6 text-yellow-400">About TECH-KEY TOOL</h3>
+      <p class="max-w-3xl mx-auto text-lg leading-relaxed">
+        TECH-KEY TOOL was created to help gadget users clean their devices safely and easily.
+        It’s a multi-purpose cleaning tool designed for laptops, phones, and keyboards.
+        Our goal is to provide a reliable, stylish, and affordable way to keep your gadgets dust-free anytime.
+      </p>
+    </div>
+  </section>
+
+  <!-- Product -->
+  <section id="product" class="py-20 product-bg text-center">
+    <div class="container mx-auto">
+      <h3 class="text-3xl font-bold mb-10 text-blue-900">Our Product</h3>
+      <div class="bg-white p-8 rounded-2xl shadow-lg card inline-block">
+        <img 
+          src="https://i.ibb.co/NgvMNMgV/techkeytool.png"
+          alt="TECH-KEY TOOL Cleaning Brush"
+     class="w-64 mx-auto mb-6 rounded-xl shadow-md border border-gray-300"
+        >
+        <h4 class="font-bold text-2xl mb-2 text-blue-900">TECH-KEY Cleaning Tool</h4>
+        <p class="text-gray-700 mb-4 max-w-md mx-auto">
+          A compact and reusable cleaning tool that helps remove dust and dirt from your gadgets like laptops, phones, and keyboards.
+        </p>
+        <p class="font-bold text-blue-900 text-lg mb-6">₱250 only</p>
+        <a href="https://youtube.com/shorts/WvQQuOFky94?si=UaBxZxPDi-UwEf5B" 
+           target="_blank"
+           class="bg-blue-900 text-white px-8 py-3 rounded-lg shadow hover:bg-blue-700 transition-all">
+           ▶ Watch Product Video
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="py-20 pricing-bg text-center">
+    <div class="container mx-auto">
+      <h3 class="text-3xl font-bold mb-8 text-yellow-400">Affordable & Reliable</h3>
+      <p class="max-w-2xl mx-auto text-lg">
+        Each TECH-KEY TOOL is made from high-quality materials and designed to last. 
+        Clean your gadgets anytime, anywhere for just <span class="font-bold text-yellow-300">₱250</span>.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 contact-bg text-center">
+    <div class="container mx-auto">
+      <h3 class="text-3xl font-bold mb-6 text-yellow-400">Contact Us</h3>
+      <p>📍 El Dorado Dulo GK, Parañaque City, Philippines</p>
+      <p>📧 <a href="mailto:technologykey11@gmail.com" class="font-bold text-yellow-300">technologykey11@gmail.com</a></p>
+      <p>📱 0969-327-3895</p>
+    </div>
+  </section>
+
+  <footer class="text-white text-center py-6">
+    <p>© 2025 TECH-KEY TOOL | The Key to a Dust-Free Device.</p>
+  </footer>
+</body>
+</html>
